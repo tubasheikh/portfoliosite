@@ -6,6 +6,9 @@
     142,228,164,0.85 */
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 
 body{
