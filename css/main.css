@@ -1,6 +1,6 @@
 
 :root{
-    --custom-color: rgba(142,228,164,0.85)
+    --custom-color: rgba(200, 216, 228, .85)
     /*--custom-color: rgba(200, 216, 228, .85)
     --custom-color: rgba(0, 214, 170, .85)
     142,228,164,0.85 */
@@ -37,12 +37,14 @@ body{
     display: grid;
     place-items: center;
     align-items: center;
-    padding: 10%;
+    /*padding: 10%;*/
     /*
     display: flex;
     flex-direction: column;
     */
 }
+
+
 
 /* NAV BAR STYLES*/
 header{
@@ -191,12 +193,12 @@ nav a:hover
 	transform: scale(1.25);
 }
 
-.socials span{
-    transform: translateY(-100%);
+.socials .socials_name{
 	transition: all 300ms 100ms ease-in-out;
 	font-size: 1.2rem;
 	opacity: 0;
-    padding-right: 90%;
+    margin-top: 0%;
+    transform: translateY(-10px);
 }
 
 
@@ -219,7 +221,7 @@ nav a:hover
 }
 
 .tech {
-    padding: 5%;
+    padding: 3%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -257,8 +259,8 @@ img{
     transform: translateY(1px);
 }
 
-/* ABout secion*/
-#about img{
+/* main secion*/
+#main .me{
     width: 200px;
 	height: 200px;
 	border-radius: 50%;
@@ -270,9 +272,36 @@ img{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
 }
 
+#main .icon{
+    margin-top: 1%;
+    width: 650px;
+}
+
+/* ABOUT SECTION*/
+
+.about_text{
+    margin-top: 10%;
+    background-color: var(--custom-color);
+}
+
+#about{
+    width: 100%;
+    background-color: var(--custom-color);
+}
+
+#about .flex{
+    padding: 3%;
+}
+
+#about h2{
+    margin-bottom: 0%;
+}
+
+#about p{
+    margin-top: 0%;
+}
 
 @media screen and (min-width: 800px){
     .nav-toggle-label{
