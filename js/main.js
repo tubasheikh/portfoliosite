@@ -9,19 +9,28 @@ techStack.addEventListener("click", (event) => {
     document.querySelector("#languages").scrollIntoView({behavior: "smooth"});
 });
 
-techStack.addEventListener("click", (event) => {
+about.addEventListener("click", (event) => {
     event.preventDefault();
     document.querySelector("#about").scrollIntoView({behavior: "smooth"});
 });
 
-techStack.addEventListener("click", (event) => {
+contact.addEventListener("click", (event) => {
     event.preventDefault();
     document.querySelector("#contact").scrollIntoView({behavior: "smooth"});
 });
 
-techStack.addEventListener("click", (event) => {
+projects.addEventListener("click", (event) => {
     event.preventDefault();
     document.querySelector("#projects").scrollIntoView({behavior: "smooth"});
 });
 
+/* SOCIAL LINKS */
+const linkedin = document.querySelector(".fa-linkedin-in");
+linkedin.addEventListener("click", () => {
+	window.open("https://www.linkedin.com/in/tuba-sheikh-401253226/", "_blank");
+});
 
+const github = document.querySelector(".fa-github");
+github.addEventListener("click", () => {
+	window.open("https://github.com/tubasheikh", "_blank");
+});

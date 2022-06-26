@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/main.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2b22aff2cf.js" crossorigin="anonymous"></script>
     <title>Tuba Sheikh</title>
 </head>
@@ -18,10 +19,10 @@
         <input type="checkbox" class="nav-toggle" id="nav-toggle">
         <nav>
             <ul>
-                <li><a class="nav_about" href="#about">About</a></li>
-                <li><a class="nav_tech_stack" href="#languages">Languages</a></li>
-                <li><a class="nav_projects" href="#projects">Projects</a></li>
-                <li><a class="nav_contact" href="#contact">Contact</a> </li>
+                <li><a class="nav_about" href="">About</a></li>
+                <li><a class="nav_tech_stack" href="">Languages</a></li>
+                <li><a class="nav_projects" href="">Projects</a></li>
+                <li><a class="nav_contact" href="">Contact</a> </li>
             </ul>
         </nav> 
         <label for="nav-toggle" class="nav-toggle-label">
@@ -30,27 +31,24 @@
     </header>
     
     <div class="page-content">
-
-    
         <section id="main">
         <div class="flex">
             <h1 class="main_heading">Front-end Developer</h1>
             <p class="sub_heading">I design and code beautifully simple things, and I love what I do.</p>
-            <img class="me" src="/images/me(1).jpeg">
+            <img class="me" src="/images/icon.jpg">
             <img class="icon" src="/images/frontendicon.png" alt="Front-end Icon">
         </div>
         </section>
         
         <section id="about">
-        <div class="flex">
+        
             <h2>Hi, I'm Tuba. Nice to meet you.</h2>
             <p id="about_me"> I am a graduate from Durham College in Computer Programming. I am an avid learner who is always on the move to advance my skills. </p>
-        </div>
+        
         </section>
    
 
         <section id="languages">
-            
             <h1>This is my Tech Stack</h1>
             <div class="container">
                 
@@ -89,7 +87,6 @@
                 </div>
             </div>
             </div>
-            
         </section>
 
         <section id="projects">
@@ -97,31 +94,42 @@
         </section>
         
         <section id="contact">
-            <h1>Let's get in touch</h1>
+            <div class="flex">
+                <h1>Let's get in touch</h1>
+                <div class="form">
+                    <form action="https://formsubmit.co/tubasheikh22@gmail.com" method="POST">
+                        <input type="text" name="name" id="firstName" placeholder="First Name" required>
+                        <input type="text" name="name" id="lastName" placeholder="Last Name" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </form>
+                </div>
+            </div>
         </section>
-    </div>
+    
 
-    <footer>
-        <div class="footer-content">
-            <ul class="socials">
-                <li class="socials_link">
-                    <i class="fas fa-envelope"></i> 
-                    <span class="socials_name"> Email</span> 
-                </li>
-                <li class="socials_link">
-                    <i class="fab fa-linkedin-in"></i>
-                    <span class="socials_name"> LinkedIn</span> 
-                </li>
-                <li class="socials_link">
-                    <i class="fa-brands fa-github"></i> 
-                    <span class="socials_name"> GitHub</span> 
-                </li>
-                <li class="socials_link">
-                    <i class="fa-solid fa-file"></i> 
-                    <span class="socials_name"> Resume</span> 
-                </li>
-            </ul>
-        </div>
-    </footer>
+        <footer>
+            <div class="footer-content">
+                <ul class="socials">
+                    <li class="socials_link">
+                        <i class="fas fa-envelope"></i> 
+                        <span class="socials_name">Email</span> 
+                    </li>
+                    <li class="socials_link">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span class="socials_name">LinkedIn</span> 
+                    </li>
+                    <li class="socials_link">
+                        <i class="fa-brands fa-github"></i> 
+                        <span class="socials_name">GitHub</span> 
+                    </li>
+                    <li class="socials_link">
+                        <i class="fa-solid fa-file"></i> 
+                        <span class="socials_name">Resume</span> 
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
 </body>
 </html>

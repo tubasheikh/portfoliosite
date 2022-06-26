@@ -1,6 +1,6 @@
 
 :root{
-    --custom-color: rgba(200, 216, 228, .85)
+    --custom-color: rgba(200, 216, 228, 1)
     /*--custom-color: rgba(200, 216, 228, .85)
     --custom-color: rgba(0, 214, 170, .85)
     142,228,164,0.85 */
@@ -8,6 +8,7 @@
 
 html{
     scroll-behavior: smooth;
+    width: 100%;
 }
 
 
@@ -16,7 +17,6 @@ body{
     height: 100%;
     /*background-color: #EDF5E1;*/
     font-family: 'Poppins', sans-serif;
-    
 }
 
 .main_heading{
@@ -50,7 +50,7 @@ body{
 header{
     /*background: var(--custom-color);*/
     text-align: center;
-position: relative;
+    position: relative;
     width: 100%; 
     z-index: 999;
     
@@ -156,7 +156,6 @@ nav a:hover
 
 
 /* Footer Styles */
-
 .footer-content{
     display: flex;
     align-items: center;
@@ -169,7 +168,7 @@ nav a:hover
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 1rem 0 3rem 0;
+    
 }
 
 .socials li{
@@ -289,6 +288,7 @@ img{
 #about{
     width: 100%;
     background-color: var(--custom-color);
+    text-align: center;
 }
 
 #about .flex{
@@ -362,3 +362,25 @@ img{
 
 }
 
+
+/* CONTACT FORM */
+#contact{
+    background-color: var(--custom-color);
+    width: 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+form input{
+    margin: 10px;
+    height: 30px;
+    width: 300px;
+    border-radius: 50px;
+    border-style: none;
+    text-align: center;
+}
