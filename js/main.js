@@ -34,3 +34,32 @@ const github = document.querySelector(".fa-github");
 github.addEventListener("click", () => {
 	window.open("https://github.com/tubasheikh", "_blank");
 });
+
+
+/* CONTACT FORM */
+
+function resetForm() {
+	firstName.value = "";
+	lastName.value = "";
+	emailId.value = "";
+	message.value = "";
+}
+
+function submitForm(){
+    message = message.value;
+    sendEmail(message);
+}
+
+function sendEmail(message) {
+	Email.send({
+        SecureToken : "15041e16-da70-44ef-b4a7-710a85149c96",
+		Host: "smtp.elasticemail.com",
+		Username: "booksandbeyond22@gmail.com",
+		Password: "BCC69F5A55EC41E0C675EFBC33EDD7CE89B8",
+		To: "tubasheikh22@gmail.com",
+		From: "booksandbeyond22@gmail.com",
+		Subject: "Contact from web portfolio",
+		Body: message
+	});
+	console.log("email sent");
+}
