@@ -63,3 +63,7 @@ function sendEmail(message) {
 	});
 	console.log("email sent");
 }
+
+/* Scroll Reveal */
+ScrollReveal().reveal(".tech", {easing: "ease-in", interval: 40, delay: 100, reset: true, mobile: false});
+ScrollReveal().reveal(".project", {easing: "ease-in", interval: 40, delay: 200, opacity: 0.1, reset: true, mobile: false});
