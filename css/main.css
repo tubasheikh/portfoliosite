@@ -453,6 +453,11 @@ button:hover{
     transform: scale(1.07);
 }
 
+#message{
+    width: 420px;
+    height: 150px;
+}
+
 /* PROJECT SECTION*/
 
 .project-list{

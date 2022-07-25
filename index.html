@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
-    <script src="/js/main.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2b22aff2cf.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/js/main.js" defer></script>
     <title>Tuba Sheikh</title>
 </head>
 <body>
@@ -165,11 +165,36 @@
                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                                 </p>
                                 <p class="tech-used">
-                                    HTML | CSS | JAVASCRIPT | AJAX | CURD OPERATIONS 
+                                    HTML | CSS | JAVASCRIPT | AJAX | CURD OPERATIONS | BOOTSTRAP
                                 </p>
                             </div>
                         </div>
                     </div>
+
+                    <div class="project">
+                        <div class="project-info left">
+                            <div class="content">
+                                <h2>Business Site</h2>
+                                <p class="proj-description">
+                                    This application fetches json data from an API based on the place entered by the user or uses geolocation to get and display the weather details.
+                                </p>
+                                <p class="tech-used">
+                                    HTML | CSS | JAVASCRIPT 
+                                </p>
+                                <div class="project-links">
+                                    <a href="https://github.com/tubasheikh/BusinessSite">
+                                        <i class="fa-brands fa-github fa-lg"></i>
+                                    </a>
+                                    <a href="https://tubasheikh.github.io/BusinessSite/"><i class="fas fa-external-link fa-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-img">
+                            <img src="./images/Landing Page.png" alt="Portfolio-site Image">
+                        </div>
+                    </div>
+
                 </div>
         </section>
         
@@ -184,7 +209,7 @@
                             <input type="text"  id="lastName" placeholder="Last Name" required>
                         </div>
                         <input type="email" id="emailId" placeholder="Email Address" required>
-                        <textarea rows="6" class="input" id="message" placeholder="Type your Message here!" autocomplete="off" required></textarea>
+                        <input type="text" id="message" placeholder="Type Your Message Here!" required>
                         <div class="flex-hor">
                             <button class="reset" onclick="resetForm()">Reset</button>
                             <button class="submit" onclick="submitForm()">Submit</button>
@@ -219,6 +244,8 @@
         </footer>
 
     </div>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
 </body>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
 </html>

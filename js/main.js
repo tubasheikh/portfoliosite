@@ -46,8 +46,9 @@ function resetForm() {
 }
 
 function submitForm(){
-    message = message.value;
-    sendEmail(message);
+    emailBody = message.value;
+    sendEmail();
+	resetForm();
 }
 
 function sendEmail(message) {
@@ -62,7 +63,8 @@ function sendEmail(message) {
 		Body: message
 	});
 	console.log("email sent");
-}
+} 
+
 
 /* Scroll Reveal */
 ScrollReveal().reveal(".tech", {easing: "ease-in", interval: 40, delay: 100, reset: true, mobile: false});
